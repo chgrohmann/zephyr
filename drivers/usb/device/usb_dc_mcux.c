@@ -81,7 +81,7 @@ BUILD_ASSERT(NUM_INSTS <= 1, "Only one USB device supported");
 	defined(CONFIG_SOC_LPC55S28) || \
 	defined(CONFIG_SOC_LPC55S16)
 #define CONTROLLER_ID	kUSB_ControllerLpcIp3511Hs0
-#elif defined(CONFIG_SOC_LPC55S36)
+#elif defined(CONFIG_SOC_LPC55S36) || defined(CONFIG_SOC_LPC54114)
 #define CONTROLLER_ID	kUSB_ControllerLpcIp3511Fs0
 #elif defined(CONFIG_SOC_LPC55S69_CPU0) || defined(CONFIG_SOC_LPC55S69_CPU1)
 #if DT_NODE_HAS_STATUS(DT_NODELABEL(usbhs), okay)
