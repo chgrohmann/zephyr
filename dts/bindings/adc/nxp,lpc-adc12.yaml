@@ -1,0 +1,20 @@
+# Copyright (c) 2021 IAW
+# SPDX-License-Identifier: Apache-2.0
+
+description: NXP LPC ADC12
+
+compatible: "nxp,lpc-adc12"
+include: [adc-controller.yaml, pinctrl-device.yaml]
+
+properties:
+    reg:
+      required: true
+
+    interrupts:
+      required: true
+
+    "#io-channel-cells":
+      const: 1
+
+io-channel-cells:
+    - input

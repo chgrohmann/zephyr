@@ -3,6 +3,16 @@
 # Copyright (c) 2015 Intel Corporation
 # SPDX-License-Identifier: Apache-2.0
 
+config ADC_LPC_ADC
+	bool "Enable LPC ADC"
+	default n
+
+config ADC_LPC_ADC12
+	bool "LPC ADC driver"
+	depends on ADC_LPC_ADC
+	help
+	  Enable the LPC ADC driver.
+
 config ADC_MCUX_ADC12
 	bool "MCUX ADC12 driver"
 	default y
