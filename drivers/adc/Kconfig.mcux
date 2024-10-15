@@ -6,6 +6,7 @@
 config ADC_LPC_ADC
 	bool "Enable LPC ADC"
 	default n
+	depends on DT_HAS_NXP_LPC_ADC12_ENABLED
 
 config ADC_LPC_ADC12
 	bool "LPC ADC driver"
